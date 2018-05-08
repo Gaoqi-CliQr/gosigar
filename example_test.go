@@ -2,7 +2,7 @@ package gosigar_test
 
 import (
 	"fmt"
-	"github.com/Centny/gosigar"
+	"github.com/Gaoqi-CliQr/gosigar"
 	"time"
 )
 

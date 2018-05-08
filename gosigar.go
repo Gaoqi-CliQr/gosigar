@@ -6,11 +6,12 @@ package gosigar
 #include <stdlib.h>
 #include <string.h>
 #include "sigar.h"
-#cgo darwin CPPFLAGS: -I/usr/local/include
-#cgo darwin LDFLAGS: -L/usr/local/lib -lsigar
-#cgo linux CPPFLAGS: -I/usr/local/include
-#cgo linux LDFLAGS: -L/usr/local/lib -lsigar
-#cgo win LDFLAGS: -LC:\LibreOffice4\sdk\lib -LC:\GOPATH\src\github.com\Centny\oogo -loogo -licppu -licppuhelper -lipurpenvhelper -lisal -lisalhelper
+//#cgo darwin CPPFLAGS: -I/usr/local/include -I${SRCDIR}/../sigar/go_bindings/Sigar/include
+//#cgo darwin LDFLAGS: -L/usr/local/lib -L${SRCDIR}/../starlord/lib/ -lsigar
+//#cgo linux CPPFLAGS: -I/usr/local/include -I${SRCDIR}/../sigar/go_bindings/Sigar/include
+//#cgo linux LDFLAGS: -L/usr/local/lib -L${SRCDIR}/../starlord/lib/linux/amd64 -lsigar
+//#cgo windows CPPFLAGS: -I${SRCDIR}/../sigar/go_bindings/Sigar/include
+//#cgo windows LDFLAGS: -L${SRCDIR}/../starlord/lib/windows/amd64 -lsigar-amd64-winnt
 
 char* gs_char_t_(char **data, int idx) {
 	return data[idx];

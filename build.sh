@@ -15,7 +15,7 @@ echo "Installing Dependence"
 #########Running Test#########
 echo "Running Test"
 pkgs="\
-  github.com/Centny/gosigar\
+  github.com/Gaoqi-CliQr/gosigar\
 "
 echo "mode: set" > a.out
 for p in $pkgs;
